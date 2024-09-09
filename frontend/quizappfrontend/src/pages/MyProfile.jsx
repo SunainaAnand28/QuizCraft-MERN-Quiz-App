@@ -2,15 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'; // Import toastify CSS
-import '../styles/MyProfile.css'; // Import the CSS file
+import 'react-toastify/dist/ReactToastify.css'; 
+import '../styles/MyProfile.css'; 
 
 const MyProfile = () => {
   const [userInfo, setUserInfo] = useState(null);
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const [updatedName, setUpdatedName] = useState(''); // State for updated username
+  const [updatedName, setUpdatedName] = useState(''); 
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -22,18 +22,20 @@ const MyProfile = () => {
           return;
         }
 
-        const response = await axios.get('http://localhost:3002/user', {
+        await axios.get('http://localhost:3002/user', {
           headers: {
             Authorization: `Bearer ${authToken}`,
           },
-        });
-
-        if (response.data.status === 'success') {
-          setUserInfo(response.data.data);
-          setUpdatedName(response.data.data.name); // Set the initial username
-        } else {
+        }).then(response => {
+          if (response.data.status === 'success') {
+            setUserInfo(response.data.data);
+            setUpdatedName(response.data.data.name); // Set the initial username
+          } else {
+            toast.error('Error fetching user info');
+          }
+        }).catch(error => {
           toast.error('Error fetching user info');
-        }
+        });
       } catch (error) {
         toast.error('Error fetching user info');
       }
@@ -57,7 +59,7 @@ const MyProfile = () => {
         return;
       }
 
-      const response = await axios.put(
+      await axios.put(
         'http://localhost:3002/user/changepassword',
         {
           currentPassword,
@@ -69,9 +71,11 @@ const MyProfile = () => {
             Authorization: `Bearer ${authToken}`,
           },
         }
-      );
-
-      toast.success(response.data.message);
+      ).then(response => {
+        toast.success(response.data.message);
+      }).catch(error => {
+        toast.error(error.response?.data?.message || 'Error changing password');
+      });
     } catch (error) {
       toast.error(error.response?.data?.message || 'Error changing password');
     }
@@ -87,7 +91,7 @@ const MyProfile = () => {
         return;
       }
 
-      const response = await axios.put(
+      await axios.put(
         'http://localhost:3002/user',
         { name: updatedName },
         {
@@ -95,9 +99,11 @@ const MyProfile = () => {
             Authorization: `Bearer ${authToken}`,
           },
         }
-      );
-
-      toast.success('Username updated successfully!');
+      ).then(response => {
+        toast.success('Username updated successfully!');
+      }).catch(error => {
+        toast.error(error.response?.data?.message || 'Error updating username');
+      });
     } catch (error) {
       toast.error(error.response?.data?.message || 'Error updating username');
     }
@@ -184,8 +190,6 @@ const MyProfile = () => {
       <div className="logout-section">
         <button onClick={handleLogout} className="logout-button">Logout</button>
       </div>
-
-      {/* Toastify container for notifications */}
       <ToastContainer />
     </div>
   );

@@ -30,7 +30,7 @@
 /* Individual button container styling */
 .button-container {
     background-color: white;
-    padding: 20px; /* Adjust padding to fit content properly */
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -40,7 +40,7 @@
 
 /* Button styling */
 .attempt-button {
-    width: 100%; /* Set button width to 100% of its container */
+    width: 100%; 
     padding: 15px;
     border: 1px solid rgb(197, 192, 192);
     border-radius: 5px;
@@ -49,7 +49,7 @@
     font-size: 18px;
     cursor: pointer;
     text-align: center;
-    box-sizing: border-box; /* Ensure padding and border are included in width calculation */
+    box-sizing: border-box; 
 }
 
 .attempt-button:hover {

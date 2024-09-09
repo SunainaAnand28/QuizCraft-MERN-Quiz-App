@@ -14,7 +14,7 @@ html, body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: antiquewhite;
-  overflow-y: auto; /* Add scroll within this container */
+  overflow-y: auto; /* Added scroll within this container */
 }
 
 /* Header styling */
@@ -30,8 +30,8 @@ html, body {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  max-height: 200px; /* Restrict height */
-  overflow-y: auto; /* Add internal scroll if content exceeds height */
+  max-height: 200px; /* Restricted height */
+  overflow-y: auto; /* Added internal scroll if content exceeds height */
 }
 
 /* Form styling */
@@ -102,14 +102,14 @@ html, body {
 
 /* Logout button section styling */
 .logout-section {
-  margin-top: 40px; /* Add margin to separate from deactivation section */
+  margin-top: 40px; /* Added margin to separate from deactivation section */
   padding: 20px;
   border-radius: 10px;
   background-color: white;
   border: 1px solid #ddd;
   text-align: center;
-  max-height: 150px; /* Restrict height */
-  overflow-y: auto; /* Add internal scroll if content exceeds height */
+  max-height: 150px; /* Restricted height */
+  overflow-y: auto; /* Added internal scroll if content exceeds height */
 }
 
 .logout-button {

@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'; // Import the CSS for Toastify
+import 'react-toastify/dist/ReactToastify.css';
 import '../styles/Exam.css';
 
 const Exam = ({ userId }) => {

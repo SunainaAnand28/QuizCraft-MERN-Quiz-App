@@ -107,7 +107,6 @@ const MyQuizzes = () => {
                     </tbody>
                 </table>
             </div>
-            {/* ToastContainer must be included to render the toasts */}
             <ToastContainer />
         </div>
     );

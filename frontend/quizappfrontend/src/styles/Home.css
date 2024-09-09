@@ -3,15 +3,14 @@
   background-color: antiquewhite;
   width: 80vw;
   height: 55vh;
- /* Adjust height automatically */
   padding: 20px;
   box-sizing: border-box;
   border-radius: 15px;
-  margin: 60px auto 0 auto; /* Center the div horizontally and ensure margin-top */
+  margin: 60px auto 0 auto;
 }
 
 .registerButton, .loginButton {
-  width: 100%; /* Full width on smaller screens */
+  width: 100%; 
   max-width: 150px; /* Max width for larger screens */
   padding: 15px;
   font-size: 14px;
@@ -30,8 +29,7 @@
 }
 
 h1 {
-  font-size: 8vw; /* Make font size responsive */
-  max-size: 50px; /* Ensure it doesn't get too big */
+  font-size: 8vw; 
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: rgb(63, 21, 65);
   margin-top: 30px;
@@ -40,25 +38,25 @@ h1 {
 .greeting {
   width: 80%; /* Set width to percentage for responsiveness */
   max-width: 200px;
-  height: auto; /* Adjust height automatically */
+  height: auto; 
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
-  margin: 50px auto; /* Center the div horizontally */
+  margin: 50px auto; 
   text-align: center;
 }
 
 @media (max-width: 600px) {
   .home {
-    width: 95%; /* Increase width on smaller screens */
+    width: 95%; 
     padding: 15px;
   }
 
   h1 {
-    font-size: 10vw; /* Adjust font size for smaller screens */
+    font-size: 10vw;
   }
 
   .registerButton, .loginButton {
-    width: 100%; /* Buttons take full width on smaller screens */
+    width: 100%; 
   }
 
   .greeting {

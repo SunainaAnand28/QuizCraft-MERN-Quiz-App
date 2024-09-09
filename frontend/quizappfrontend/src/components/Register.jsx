@@ -10,7 +10,6 @@ function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const [errors, setErrors] = useState({});
   const navigate = useNavigate();
 
   const validateInputs = () => {
@@ -37,12 +36,9 @@ function Register() {
 
   const handleRegister = async (e) => {
     e.preventDefault();
-    setErrors({});
 
     const validationErrors = validateInputs();
     if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      // Trigger toast notifications for validation errors
       for (const key in validationErrors) {
         toast.error(validationErrors[key]);
       }
@@ -51,8 +47,7 @@ function Register() {
 
     try {
       const response = await axios.post('http://localhost:3002/auth/', { name, email, password, confirmPassword });
-      const { token } = response.data.data; // Adjust according to how the token is structured in the response
-
+      const { token } = response.data.data; 
       if (token) {
         toast.success('Registration successful! Redirecting to OTP verification...');
         navigate(`/auth/verify-otp/${token}`, { state: { email } });

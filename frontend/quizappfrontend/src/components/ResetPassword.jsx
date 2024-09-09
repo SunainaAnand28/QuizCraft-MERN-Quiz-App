@@ -20,7 +20,6 @@ function ResetPassword() {
     axios.post(`http://localhost:3002/auth/resetpassword/${userId}`, { password, token })
       .then(response => {
         toast.success("Password reset successfully.");
-        // Optionally redirect to login page or show a confirmation message
       })
       .catch(error => {
         const message = error?.response?.data?.message;

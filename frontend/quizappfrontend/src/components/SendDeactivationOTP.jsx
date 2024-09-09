@@ -13,7 +13,7 @@ const SendDeactivateOTP = () => {
     try {
       const response = await axios.patch('http://localhost:3002/user/deactivate', {}, {
         headers: {
-          Authorization: `Bearer ${localStorage.getItem('authToken')}`, // Assuming JWT token is stored in local storage
+          Authorization: `Bearer ${localStorage.getItem('authToken')}`,
         },
       });
       setMessage(response.data.message);

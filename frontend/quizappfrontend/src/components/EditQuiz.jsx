@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "../styles/EditQuiz.css";
 import Navbar from './Navbar';
-import _ from 'lodash';
+
 
 const EditQuiz = () => {
   const { quizId } = useParams();
@@ -22,7 +22,7 @@ const EditQuiz = () => {
     allowedUser: [] // Allow users field
   });
   const [newAllowedUser, setNewAllowedUser] = useState(''); // Temp state for new allowed user input
-  const [initialQuizData, setInitialQuizData] = useState(null);
+  
 
   useEffect(() => {
     const fetchQuiz = async () => {
@@ -34,15 +34,14 @@ const EditQuiz = () => {
         });
         const fetchedQuiz = response.data.data;
         setQuiz(fetchedQuiz);
-        setInitialQuizData(_.cloneDeep(fetchedQuiz));
       } catch (error) {
         toast.error('Error fetching quiz details');
       }
     };
-
+  
     fetchQuiz();
   }, [quizId]);
-
+  
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
     setQuiz({ ...quiz, [name]: type === 'checkbox' ? checked : value || '' });

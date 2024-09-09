@@ -11,7 +11,7 @@
 /* Styling for the quiz form container */
 .quiz-form {
   margin-top: 20px;
-  max-height: 600px; /* Set a maximum height for the quiz form */
+  max-height: 600px; 
   overflow-y: auto; /* Enable vertical scrolling */
   padding: 10px;
 }
@@ -35,7 +35,7 @@
 
 /* Styling for the quiz list */
 .quiz-list {
-  max-height: 500px; /* Set a maximum height for the quiz list */
+  max-height: 500px; 
   overflow-y: auto; /* Enable vertical scrolling */
 }
 
@@ -148,14 +148,14 @@
     padding: 10px;
   }
   .quiz-list button {
-    width: 100%; /* Buttons take up full width on small screens */
+    width: 100%; 
     margin-top: 10px;
   }
   .quiz-actions {
-    gap: 5px; /* Smaller gap between elements */
+    gap: 5px; 
   }
   .quiz-form {
-    padding: 5px; /* Reduce padding inside the quiz form */
+    padding: 5px; 
   }
   .quiz-form button {
     padding: 10px; /* Adjust button padding */

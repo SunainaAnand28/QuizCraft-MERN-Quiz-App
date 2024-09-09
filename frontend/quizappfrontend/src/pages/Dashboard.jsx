@@ -1,7 +1,7 @@
 // components/Dashboard.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Navbar from '../components/Navbar'; // Import the Navbar component
+import Navbar from '../components/Navbar'; 
 import '../styles/Dashboard.css';
 
 const Dashboard = () => {
@@ -9,7 +9,7 @@ const Dashboard = () => {
 
   return (
     <div>
-      <Navbar /> {/* Use the Navbar component here */}
+      <Navbar /> 
 
       <div className="dashboard-container">
         <h1 className="dashboard-title">Dashboard</h1>

@@ -1,14 +1,14 @@
 .my-quiz {
     margin: 20px auto;
-    width: 90%; /* Default width */
-    max-width: 1200px; /* Add a max-width for larger screens */
-    background-color:rgba(250, 235, 215, 0.9); /* Lighter background opacity */
+    width: 90%; 
+    max-width: 1200px; 
+    background-color:rgba(250, 235, 215, 0.9); 
     padding: 20px;
     border-radius: 14px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-height: 80vh; /* Set a maximum height for the container */
-    overflow-y: auto; /* Enable vertical scrolling when content overflows */
-    overflow-x: visible; /* Prevent horizontal scrolling */
+    max-height: 80vh; 
+    overflow-y: auto; 
+    overflow-x: visible; 
 }
 
 .my-quiz h2 {

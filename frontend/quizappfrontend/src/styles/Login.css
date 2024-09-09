@@ -1,11 +1,11 @@
 .container {
-    text-align: center; /* Center the content */
+    text-align: center; 
     background-color: antiquewhite;
     width: 60vw;
-    max-width: 600px; /* Set a max-width for the container */
-    padding: 20px; /* Add padding for spacing inside the container */
-    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
-    border-radius: 15px; /* Round the corners */
+    max-width: 600px; 
+    padding: 20px; /* Added padding for spacing inside the container */
+    box-sizing: border-box; 
+    border-radius: 15px; 
     margin: 0 auto; /* Center the container horizontally */
 }
 
@@ -14,7 +14,7 @@ h1 {
     text-decoration: solid;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(63, 21, 65);
-    margin-bottom: 20px; /* Add margin below the heading */
+    margin-bottom: 20px;
 }
 
 .formgroup {
@@ -33,13 +33,13 @@ h1 {
     padding: 8px;
     box-sizing: border-box;
     border-radius: 8px;
-    border: 1px solid #ccc; /* Add border for better appearance */
+    border: 1px solid #ccc; /* Added border for better appearance */
 }
 
 button {
     width: 150px; /* Set button width */
     padding: 10px;
-    font-size: 14px; /* Adjust font size for button text */
+    font-size: 14px; 
     margin-top: 10px; /* Add margin-top to create vertical space */
     border-radius: 10px; /* Adjust border-radius for proportionate rounding */
     border: 2px solid #ddd3d3; /* Add border for appearance */
@@ -54,5 +54,5 @@ button:hover {
 
 .error-message {
     color: red; /* Style error message */
-    margin-top: 10px; /* Add margin above the error message */
+    margin-top: 10px; 
 }

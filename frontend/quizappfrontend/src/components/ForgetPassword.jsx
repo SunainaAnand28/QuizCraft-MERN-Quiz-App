@@ -14,8 +14,8 @@ function ForgetPassword() {
     axios.post('http://localhost:3002/auth/forgotpassword', { email })
       .then(response => {
         toast.success("If your email is registered, you'll receive a reset link shortly.");
-        // Assuming the server returns a userId in the response or redirects the user elsewhere
-        navigate('/auth/resetpassword/'); // Adjust this according to your routing
+        
+        navigate('/auth/resetpassword/'); 
       })
       .catch(error => {
         const message = error?.response?.data?.message;
