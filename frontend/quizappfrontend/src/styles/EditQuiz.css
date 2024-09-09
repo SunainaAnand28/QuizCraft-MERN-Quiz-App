@@ -1,0 +1,188 @@
+/* Overall container styling */
+.edit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 90%; /* Adjusted to be responsive */
+  background-color: antiquewhite;
+  max-height: 90vh; /* Set maximum height for container */
+  overflow-y: auto; /* Add vertical scroll to the entire container */
+}
+
+/* Scroll bar styling for the container */
+.edit-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.edit-container::-webkit-scrollbar-thumb {
+  background-color: #e2e2e2e6; /* Match scrollbar thumb color with button */
+  border-radius: 4px;
+}
+
+.edit-container::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Light gray background for scrollbar track */
+}
+
+/* Heading styling */
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333; /* Darker heading text */
+}
+
+/* Form styling */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Edit group styling */
+.edit-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap; /* Allow elements to wrap in smaller screens */
+}
+
+/* Label styling */
+label {
+  font-weight: bold;
+  min-width: 120px;
+  color: #555; /* Slightly darker label text */
+}
+
+/* Input styling */
+input[type="text"],
+input[type="number"],
+select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1; /* Make inputs fill available space */
+  color: #555; /* Slightly darker input text */
+}
+
+/* Checkbox styling */
+.edit-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+  accent-color: #b78e4c; /* Checkbox color */
+}
+/* Question section styling */
+.question-section.edit-group {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1.5rem; /* Increased padding for better spacing */
+  margin-top: 1.5rem; /* Increased margin from top */
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9; /* Light gray background for question section */
+}
+
+/* Question styling within question section */
+.question {
+  border-bottom: 1px solid #ddd; /* Add border between questions */
+  padding: 1rem;
+  margin-bottom: 1rem; /* Space between questions */
+  background-color: #fff; /* White background for each question */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Style for question number */
+.question label:first-of-type {
+  font-size: 1rem; /* Slightly larger font for labels */
+  margin-bottom: 0.5rem; /* Space between label and input */
+}
+
+/* Style for options within a question */
+.question .edit-group {
+  display: flex;
+  flex-direction: column; /* Stack options vertically */
+  gap: 0.5rem; /* Space between options */
+  margin-bottom: 0.5rem; /* Space below options */
+}
+
+/* Adjust input styling for options */
+.question input[type="text"] {
+  width: 100%; /* Full width for better alignment */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Responsive adjustments for questions */
+@media (min-width: 1024px) {
+  .question {
+    display: flex;
+    flex-direction: column; /* Stack questions vertically on large screens */
+    gap: 1rem; /* Space between question elements */
+  }
+
+  .question .edit-group {
+    flex-direction: row; /* Align options horizontally */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+  }
+
+  .question input[type="text"] {
+    max-width: calc(50% - 1rem); /* Limit width and adjust for spacing */
+  }
+}
+/* Error message styling */
+.question-section p {
+  color: #ff4d4d; /* Red error message */
+  font-weight: bold;
+}
+
+/* Button styling */
+button[type="button"] {
+  background-color: #ae8965; /* Button color */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1rem; /* Consistent font size */
+}
+
+/* Button hover effect */
+button[type="button"]:hover {
+  background-color: #a7744b; /* Darker button color */
+}
+
+/* Specific styling for question options */
+.question .edit-group {
+  margin-bottom: 0.5rem; /* Reduce gap between options */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .edit-container {
+    padding: 1rem;
+    max-width: 100%; /* Allow container to take full width */
+  }
+
+  .edit-group {
+    flex-direction: column; /* Stack labels and inputs vertically */
+    align-items: flex-start;
+  }
+
+  label {
+    min-width: auto; /* Remove fixed label width */
+    margin-bottom: 0.5rem; /* Add space between label and input */
+  }
+
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%; /* Make inputs full width on smaller screens */
+  }
+
+  /* Responsive button styling */
+  button[type="button"] {
+    width: 100%; /* Make button full width on smaller screens */
+    padding: 0.75rem; /* Adjust padding for better fit */
+    font-size: 1.1rem; /* Increase font size for better readability */
+  }
+}

@@ -1,0 +1,111 @@
+/* Navbar.module.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #d0ab81;
+}
+
+.appName {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appName:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.navbarLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.navItem {
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navItem:hover {
+  background-color: #e6c28b;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.navItemActive {
+  background-color: #d0ab81;
+  color: white;
+  font-weight: bold;
+}
+
+.accountSettings {
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.accountSettings img {
+  border-radius: 50%;
+  border: 2px solid #d0ab81;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .appName {
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+
+  .navItem {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  .navbarLinks {
+    gap: 10px;
+  }
+
+  .accountSettings img {
+    width: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .appName {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .navItem {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .navbarLinks {
+    gap: 8px;
+  }
+
+  .accountSettings img {
+    width: 30px;
+  }
+}

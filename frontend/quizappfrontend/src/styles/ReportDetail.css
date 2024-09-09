@@ -1,0 +1,45 @@
+/* ReportDetail.css */
+.report-detail-container {
+    text-align: center; /* Center the content */
+    background-color: antiquewhite;
+    width: 60vw;
+    max-width: 600px; /* Set a max-width for the container */
+    padding: 20px; /* Add padding for spacing inside the container */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+    border-radius: 15px; /* Round the corners */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.report-detail-container h1 {
+    font-size: 50px;
+    text-decoration: solid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(63, 21, 65);
+    margin-bottom: 20px; /* Add margin below the heading */
+}
+
+.report-detail-container p {
+    font-size: 18px; /* Adjust font size for paragraphs */
+    margin-bottom: 10px; /* Add margin below paragraphs */
+}
+
+.report-detail-container button {
+    width: 200px; /* Set button width */
+    padding: 10px;
+    font-size: 16px; /* Adjust font size for button text */
+    margin-top: 20px; /* Add margin-top to create vertical space */
+    border-radius: 10px; /* Adjust border-radius for proportionate rounding */
+    border: 2px solid #ddd3d3; /* Add border for appearance */
+    background-color: #e3c9a2; /* Set button background color */
+    color: #2d2929; /* Set button text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.report-detail-container button:hover {
+    background-color: #c4aa87;
+}
+
+.error-message {
+    color: red; /* Style error message */
+    margin-top: 10px; /* Add margin above the error message */
+}

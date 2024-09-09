@@ -1,0 +1,31 @@
+/* Container styling */
+.deactivate-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Button styling */
+  .deactivate-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e3c9a2;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .deactivate-button:hover {
+    background-color: #d1b69e;
+  }
+  
+  .deactivate-button:disabled {
+    background-color: #f0e6d4;
+    cursor: not-allowed;
+  }
+  

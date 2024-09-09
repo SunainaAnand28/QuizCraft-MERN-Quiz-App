@@ -1,0 +1,127 @@
+.my-quiz {
+    margin: 20px auto;
+    width: 90%; /* Default width */
+    max-width: 1200px; /* Add a max-width for larger screens */
+    background-color:rgba(250, 235, 215, 0.9); /* Lighter background opacity */
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 80vh; /* Set a maximum height for the container */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+    overflow-x: visible; /* Prevent horizontal scrolling */
+}
+
+.my-quiz h2 {
+    text-align: center;
+    font-size: 1.5rem; /* Responsive font size */
+}
+
+.my-quiz table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    padding: 0 10px; /* Optional: Add padding to the table to prevent it from touching the container edges */
+}
+
+.my-quiz table,
+.my-quiz th,
+.my-quiz td {
+    border: 1px solid #dad7d7;
+}
+
+.my-quiz th,
+.my-quiz td {
+    padding: 10px;
+    text-align: center;
+}
+
+.my-quiz th {
+    background-color: #f1f1f1;
+}
+
+tr {
+    background-color: #ffffffd8;
+}
+
+.my-quiz button {
+    padding: 4px 8px; /* Decreased button size */
+    margin: 2px; /* Reduced margin */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    background-color: #d0ab81; /* Button background color */
+    font-size: 14px; /* Slightly smaller font */
+    display: inline-block; /* Keep buttons on the same line */
+}
+
+.published {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    gap: 5px; /* Add some spacing between the buttons */
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .my-quiz {
+        width: 95%; /* Increase width for smaller screens */
+        padding: 15px;
+    }
+
+    .my-quiz h2 {
+        font-size: 1.25rem; /* Slightly smaller heading on smaller screens */
+    }
+
+    .my-quiz table,
+    .my-quiz th,
+    .my-quiz td {
+        font-size: 0.9rem; /* Smaller text for tables on smaller screens */
+    }
+
+    .my-quiz button {
+        font-size: 13px; /* Decrease button font size */
+        padding: 3px 6px; /* Adjust padding */
+    }
+
+    .button-group {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .my-quiz {
+        width: 100%; /* Full width for very small screens */
+        padding: 10px;
+    }
+
+    .my-quiz h2 {
+        font-size: 1rem; /* Smaller heading for very small screens */
+    }
+
+    .my-quiz table,
+    .my-quiz th,
+    .my-quiz td {
+        font-size: 0.8rem; /* Further decrease table text size */
+    }
+
+    .my-quiz button {
+        font-size: 12px; /* Further decrease button font size */
+        padding: 2px 4px; /* Adjust padding */
+    }
+
+    .button-group {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Increase spacing between buttons for better touch accessibility */
+    }
+}

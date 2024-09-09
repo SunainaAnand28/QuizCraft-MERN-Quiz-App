@@ -1,0 +1,127 @@
+/* Prevent scrolling on the entire page */
+html, body {
+  height: 100%;
+  overflow: hidden; /* Prevent page scroll */
+}
+
+/* Container styling */
+.profile-container {
+  max-width: 900px;
+  height: 95vh; 
+  width: 50vw;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: antiquewhite;
+  overflow-y: auto; /* Add scroll within this container */
+}
+
+/* Header styling */
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* User info styling */
+.user-info {
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-height: 200px; /* Restrict height */
+  overflow-y: auto; /* Add internal scroll if content exceeds height */
+}
+
+/* Form styling */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile-form label {
+  font-weight: bold;
+}
+
+.profile-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.profile-form button {
+  padding: 10px;
+  border: 1px solid rgb(225, 220, 220);
+  border-radius: 5px;
+  background-color: #e3c9a2;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.profile-form button:hover {
+  background-color: #e3bb80;
+}
+
+/* Error and success messages */
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: green;
+}
+
+/* Deactivation button section styling */
+.deactivation-section {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  text-align: center;
+  max-height: 150px; /* Restrict height */
+  overflow-y: auto; /* Add internal scroll if content exceeds height */
+}
+
+.deactivate-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.deactivate-button:hover {
+  background-color: #c82333;
+}
+
+/* Logout button section styling */
+.logout-section {
+  margin-top: 40px; /* Add margin to separate from deactivation section */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  text-align: center;
+  max-height: 150px; /* Restrict height */
+  overflow-y: auto; /* Add internal scroll if content exceeds height */
+}
+
+.logout-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6c757d;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-button:hover {
+  background-color: #5a6268;
+}

@@ -1,0 +1,80 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #d0ab81;
+}
+
+
+.navbar .account-settings {
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.navbar .account-settings img {
+  border-radius: 50%;
+  border: 2px solid #d0ab81;
+}
+
+/* Dashboard Container Styles */
+.dashboard-container {
+  background-color: antiquewhite;
+  width: 70vw;
+  margin: 80px auto 0; /* Center the container horizontally and add margin at the top */
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column; /* Stack child containers vertically */
+  align-items: center; /* Center child containers horizontally */
+}
+
+.nav-item {
+  background-color: rgb(255, 255, 255);
+  width: 55vw;
+  height: 150px;
+  border-radius: 15px;
+  margin-bottom: 20px; /* Add space between containers */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the content within the container */
+}
+
+.nav-item h3 {
+  margin-bottom: 10px;
+  text-align: center; /* Center the heading within the container */
+}
+
+.nav-item button {
+  margin: 5px;
+  width: 150px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #b9b5b5;
+  background-color: #e3c9a2;
+  color: #2d2929;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item button:hover {
+  background-color: #e6c28b
+}
+
+.dashboard-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px; /* Increase space between the heading and child containers */
+}

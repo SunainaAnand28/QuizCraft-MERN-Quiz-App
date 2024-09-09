@@ -1,0 +1,127 @@
+.favorite-questions-container {
+  background-color: antiquewhite;
+  padding: 20px;
+  min-height: 100vh;
+  min-width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title styling */
+.favorite-questions-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #5a5a5a;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* Styling for the favorite questions list */
+.favorite-questions-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+/* Styling for each favorite question item */
+.favorite-question-item {
+  background-color: white;
+  height: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px 0;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect on question items */
+.favorite-question-item:hover {
+  transform: scale(1.03);
+}
+
+/* Text styling inside question items */
+.favorite-question-item p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Options list styling */
+.favorite-question-item ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+/* Option item styling */
+.favorite-question-item li {
+  background-color: #f7f7f7;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Button styling */
+.favorite-question-item button {
+  background-color: #d0ab81;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Hover effect on button */
+.favorite-question-item button:hover {
+  background-color: #cfa16d;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .favorite-questions-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .favorite-question-item p {
+    font-size: 0.9rem;
+  }
+
+  .favorite-question-item button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .favorite-questions-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .favorite-question-item {
+    padding: 15px;
+  }
+
+  .favorite-question-item p {
+    font-size: 0.8rem;
+  }
+
+  .favorite-question-item button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
