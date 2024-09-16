@@ -1,7 +1,7 @@
 // Redirect request to Particular method on Controller
 import express from "express";
 import { body } from "express-validator";
-import { resendRegistrationOTP } from "../controllers/otp";
+import { resendRegistrationOTP } from "../controllers/OTP";
 
 import {
   activateUser,

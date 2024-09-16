@@ -9,7 +9,7 @@ import sendEmail from "../utils/email";
 
 
 import OTP from "../models/otp"
-import { sendDeactivateEmailOTP } from "./otp";
+import { sendDeactivateEmailOTP } from "./OTP";
 
 const getUser: RequestHandler = async (req, res, next) => {
   let resp: ReturnResponse;

@@ -11,7 +11,7 @@ import Mailgen from 'mailgen';
 
 
 import OTP from "../models/otp"
-import sendEmailOTPRegister from "./otp"
+import sendEmailOTPRegister from "./OTP"
 
 
 
