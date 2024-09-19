@@ -1,5 +1,5 @@
 import sendEmail from "../utils/email";
-import OTP from "../models/otp"
+import OTP from "../models/OTP"
 import User from "../models/user"
 import otpGenerator from "otp-generator"
 import ProjectError from "../helper/error";

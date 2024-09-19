@@ -8,7 +8,7 @@ import { ReturnResponse } from "../utils/interfaces";
 import sendEmail from "../utils/email";
 
 
-import OTP from "../models/otp"
+import OTP from "../models/OTP"
 import { sendDeactivateEmailOTP } from "./otp";
 
 const getUser: RequestHandler = async (req, res, next) => {
