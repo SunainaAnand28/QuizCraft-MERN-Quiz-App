@@ -3,10 +3,10 @@
     background-color: antiquewhite;
     width: 60vw;
     max-width: 600px; 
-    padding: 20px; /* Added padding for spacing inside the container */
+    padding: 20px; 
     box-sizing: border-box; 
     border-radius: 15px; 
-    margin: 0 auto; /* Center the container horizontally */
+    margin: 0 auto; 
 }
 
 h1 {
@@ -19,7 +19,7 @@ h1 {
 
 .formgroup {
     margin-bottom: 15px;
-    text-align: left; /* Align labels and inputs to the left */
+    text-align: left; 
 }
 
 .formgroup label {
@@ -29,23 +29,23 @@ h1 {
 
 .formgroup input[type="email"],
 .formgroup input[type="password"] {
-    width: 100%; /* Set input width to 100% of the container */
+    width: 100%; 
     padding: 8px;
     box-sizing: border-box;
     border-radius: 8px;
-    border: 1px solid #ccc; /* Added border for better appearance */
+    border: 1px solid #ccc; 
 }
 
 button {
-    width: 150px; /* Set button width */
+    width: 150px; 
     padding: 10px;
     font-size: 14px; 
-    margin-top: 10px; /* Add margin-top to create vertical space */
-    border-radius: 10px; /* Adjust border-radius for proportionate rounding */
-    border: 2px solid #ddd3d3; /* Add border for appearance */
-    background-color: #e3c9a2; /* Set button background color */
-    color: #2d2929; /* Set button text color */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid #ddd3d3; 
+    background-color: #e3c9a2;
+    color: #2d2929; 
+    cursor: pointer;
 }
 
 button:hover {
@@ -53,7 +53,7 @@ button:hover {
 }
 
 .error-message {
-    color: red; /* Style error message */
+    color: red; 
     margin-top: 10px; 
 }
 

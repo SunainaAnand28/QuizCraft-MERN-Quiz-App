@@ -2,9 +2,9 @@
 .attempt-quiz-container {
     width: 800px;
     display: flex;
-    flex-direction: column; /* Stack child elements vertically */
-    align-items: center; /* Center-align items horizontally */
-    gap: 10px; /* Add spacing between the headings and button containers */
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
     padding: 30px;
     background-color: antiquewhite;
     border-radius: 10px;
@@ -34,8 +34,8 @@
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 100%; /* Set to full width of the parent container */
-    max-width: 300px; /* Set a max-width to avoid containers becoming too wide */
+    width: 100%; 
+    max-width: 300px; 
 }
 
 /* Button styling */

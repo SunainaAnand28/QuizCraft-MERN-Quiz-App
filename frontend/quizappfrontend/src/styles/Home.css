@@ -36,7 +36,7 @@ h1 {
 }
 
 .greeting {
-  width: 80%; /* Set width to percentage for responsiveness */
+  width: 80%; 
   max-width: 200px;
   height: auto; 
   background-color: rgb(255, 255, 255);
@@ -61,7 +61,7 @@ h1 {
   }
 
   .greeting {
-    width: 100%; /* Full width for smaller screens */
+    width: 100%; 
     margin: 30px auto;
   }
 }

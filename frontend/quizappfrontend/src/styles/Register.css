@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+    box-sizing: border-box; 
 }
 
 body {
@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #2d2929; /* Ensure the text color is set for readability */
+    color: #2d2929; 
 }
 
 .rcontainer {
@@ -22,7 +22,7 @@ body {
     width: 50vw;
     box-sizing: border-box;
     text-align: center;
-    color: #2d2929; /* Ensure text color inside the container is readable */
+    color: #2d2929; 
 }
 
 h2 {
@@ -38,7 +38,7 @@ h2 {
 .formgroup label {
     display: block;
     margin-bottom: 5px;
-    color: #2d2929; /* Ensure label text is readable */
+    color: #2d2929; 
 }
 
 .formgroup input[type="text"],
@@ -49,8 +49,8 @@ h2 {
     box-sizing: border-box;
     border-radius: 8px;
     border: 1px solid #ccc;
-    font-size: 16px; /* Ensure input text is readable */
-    color: #2d2929; /* Set input text color */
+    font-size: 16px; 
+    color: #2d2929; 
 }
 
 button {
