@@ -15,10 +15,9 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #d0ab81;
 }
-.appName {
+.appName  {
   width: 40px;
   height: 40px;
-  background-image: url('D:\Internship\QuizCraft-MERN-Quiz-App\frontend\quizappfrontend\public\favicon.ico'); 
   background-size: contain;
   background-repeat: no-repeat; 
   background-position: left center; 
@@ -28,6 +27,11 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
 
 .appName:hover {
   transform: translateY(-2px);

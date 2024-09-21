@@ -8,6 +8,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.appName} onClick={() => navigate('/dashboard')}>
+        <img className='applogo' src="/favicon.ico" alt="" />
       </div>
 
       <div className={styles.navbarLinks}>
