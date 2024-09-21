@@ -1,4 +1,4 @@
-.container {
+.lcontainer {
     text-align: center; 
     background-color: antiquewhite;
     width: 60vw;
@@ -55,4 +55,28 @@ button:hover {
 .error-message {
     color: red; /* Style error message */
     margin-top: 10px; 
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .lcontainer {
+        width: 90vw;
+        height: 60vh;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 20px; 
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .formgroup input[type="text"],
+    .formgroup input[type="email"], 
+    .formgroup input[type="password"] {
+        font-size: 14px; 
+    }
 }

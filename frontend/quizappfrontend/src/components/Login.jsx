@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom'; // Import Link from react-router-dom
 import { ToastContainer, toast } from 'react-toastify';
 
 import '../styles/Login.css'; 
@@ -23,10 +23,10 @@ function Login() {
   };
 
   return (
-    <div className="container">
+    <div className="lcontainer">
       <ToastContainer />
       <h2>Login</h2>
-      <p>Not registered? <a href="http://localhost:3000/auth/">Register</a></p>
+      <p>Not registered? <Link to="/auth">Register</Link></p>
       <form onSubmit={handleLogin}>
         <div className="formgroup">
           <label htmlFor="email">Email</label>

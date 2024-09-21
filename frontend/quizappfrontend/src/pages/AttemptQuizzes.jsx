@@ -25,8 +25,7 @@ const AttemptQuiz = () => {
     <Navbar></Navbar>
    <div className="attempt-quiz-container">
       <h2>Attempt Quiz</h2>
-      <h3>Start strong and finish even stronger! Good luck!</h3>
-      
+      <h3>Start strong and finish even stronger!</h3>
       <div className="button-container">
         <p>Take the Exam</p>
         <button className="attempt-button" onClick={goToExam}>

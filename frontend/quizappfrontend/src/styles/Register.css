@@ -14,12 +14,12 @@ body {
     color: #2d2929; /* Ensure the text color is set for readability */
 }
 
-.container {
-    background-color: #eadfbf;
+.rcontainer {
+    background-color: antiquewhite;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 50vw;
     box-sizing: border-box;
     text-align: center;
     color: #2d2929; /* Ensure text color inside the container is readable */
@@ -71,13 +71,13 @@ button:hover {
 
 /* Responsive Design */
 @media (max-width: 480px) {
-    .container {
-        padding: 20px;
+    .rcontainer {
+        width: 90vw;
         max-width: 90%;
     }
 
     h2 {
-        font-size: 20px; /* Adjust heading font size for smaller screens */
+        font-size: 20px; 
     }
 
     button {

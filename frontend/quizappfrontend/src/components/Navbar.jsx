@@ -8,7 +8,6 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.appName} onClick={() => navigate('/dashboard')}>
-        QuizCraft
       </div>
 
       <div className={styles.navbarLinks}>

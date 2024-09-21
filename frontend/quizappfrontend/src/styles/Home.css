@@ -2,7 +2,7 @@
   text-align: center;
   background-color: antiquewhite;
   width: 80vw;
-  height: 55vh;
+  height: 65vh;
   padding: 20px;
   box-sizing: border-box;
   border-radius: 15px;
@@ -48,6 +48,7 @@ h1 {
 @media (max-width: 600px) {
   .home {
     width: 95%; 
+    height: 85vh;
     padding: 15px;
   }
 

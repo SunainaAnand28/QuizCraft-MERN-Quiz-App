@@ -15,17 +15,19 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #d0ab81;
 }
-
 .appName {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  padding: 10px 20px;
-  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  background-image: url('D:\Internship\QuizCraft-MERN-Quiz-App\frontend\quizappfrontend\public\favicon.ico'); 
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: left center; 
+  border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-left: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .appName:hover {
   transform: translateY(-2px);
