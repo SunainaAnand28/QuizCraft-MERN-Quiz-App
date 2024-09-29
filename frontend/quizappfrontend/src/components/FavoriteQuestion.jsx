@@ -21,7 +21,7 @@ const FavoriteQuestions = () => {
           return;
         }
 
-        const response = await axios.get('http://localhost:3002/favquestion', {
+        const response = await axios.get('${process.env.REACT_APP_BACKEND_URL}/favquestion', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -46,7 +46,7 @@ const FavoriteQuestions = () => {
         return;
       }
 
-      await axios.delete(`http://localhost:3002/favquestion/${favQuestionId}`, {
+      await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/${favQuestionId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -27,7 +27,7 @@ const EditQuiz = () => {
   useEffect(() => {
     const fetchQuiz = async () => {
       try {
-        const response = await axios.get(`http://localhost:3002/quiz/${quizId}`, {
+        const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/${quizId}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('authToken')}`
           }

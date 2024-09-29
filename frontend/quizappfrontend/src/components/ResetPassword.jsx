@@ -17,7 +17,7 @@ function ResetPassword() {
       return;
     }
 
-    axios.post(`http://localhost:3002/auth/resetpassword/${userId}`, { password, token })
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/auth/resetpassword/${userId}`, { password, token })
       .then(response => {
         toast.success("Password reset successfully.");
       })

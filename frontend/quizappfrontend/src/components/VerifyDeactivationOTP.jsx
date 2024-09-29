@@ -10,7 +10,7 @@ const VerifyDeactivateOTP = () => {
   const verifyOTPHandler = async () => {
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:3002/user/deactivate/verify-deactivate-account-otp', {
+      const response = await axios.post('${process.env.REACT_APP_BACKEND_URL}/user/deactivate/verify-deactivate-account-otp', {
         otp
       }, {
         headers: {

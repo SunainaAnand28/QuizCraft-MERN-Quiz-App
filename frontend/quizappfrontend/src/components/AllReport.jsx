@@ -11,7 +11,7 @@ const AllReport = () => {
   useEffect(() => {
     const fetchReports = async () => {
       try {
-        const response = await axios.get(`http://localhost:3002/report`, {
+        const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/report`, {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('authToken')}`
           }

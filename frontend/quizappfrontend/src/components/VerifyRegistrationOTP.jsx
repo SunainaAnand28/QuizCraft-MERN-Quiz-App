@@ -24,7 +24,7 @@ function VerifyOTP() {
 
     try {
       // Send OTP and token to the backend for verification
-      await axios.post(`http://localhost:3002/auth/verify-registration-otp/${token}`, { otp });
+      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/auth/verify-registration-otp/${token}`, { otp });
 
       // Show success message and redirect to login
       setSuccessMessage('OTP verified successfully!');

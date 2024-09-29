@@ -22,7 +22,7 @@ const Exam = ({ userId }) => {
           return;
         }
 
-        const response = await axios.get('http://localhost:3002/quiz/allpublishedquiz/exam', {
+        const response = await axios.get('${process.env.REACT_APP_BACKEND_URL}/quiz/allpublishedquiz/exam', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -46,7 +46,7 @@ const Exam = ({ userId }) => {
         return;
       }
 
-      const response = await axios.get(`http://localhost:3002/exam/${quizId}`, {
+      const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/${quizId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -76,7 +76,7 @@ const Exam = ({ userId }) => {
       const formattedAttemptedAnswers = attemptedAnswers;
 
       const response = await axios.post(
-        `http://localhost:3002/exam`,
+        `${process.env.REACT_APP_BACKEND_URL}/exam`,
         {
           quizId: currentQuiz._id,
           attemptedQuestion: formattedAttemptedAnswers,
@@ -111,7 +111,7 @@ const Exam = ({ userId }) => {
 
       if (isFavorite) {
         const favQuestion = favoriteQuestions.find(fav => fav.questionId === question._id);
-        await axios.delete(`http://localhost:3002/favquestion/${favQuestion.favQuestionId}`, {
+        await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/favquestion/${favQuestion.favQuestionId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -122,7 +122,7 @@ const Exam = ({ userId }) => {
         );
       } else {
         const response = await axios.post(
-          `http://localhost:3002/favquestion`,
+          `${process.env.REACT_APP_BACKEND_URL}/favquestion`,
           {
             question: question.question,
             options: question.options,

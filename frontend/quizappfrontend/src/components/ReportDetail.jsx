@@ -16,7 +16,7 @@ const ReportDetail = () => {
     const fetchReport = async () => {
       try {
         const token = state.token;
-        const response = await axios.get(`http://localhost:3002/report/${reportId}`, {
+        const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/report/${reportId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

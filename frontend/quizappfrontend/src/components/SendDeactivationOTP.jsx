@@ -11,7 +11,7 @@ const SendDeactivateOTP = () => {
   const sendOTPHandler = async () => {
     setLoading(true);
     try {
-      const response = await axios.patch('http://localhost:3002/user/deactivate', {}, {
+      const response = await axios.patch('${process.env.REACT_APP_BACKEND_URL}/user/deactivate', {}, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('authToken')}`,
         },

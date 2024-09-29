@@ -15,7 +15,7 @@ const MyQuizzes = () => {
     useEffect(() => {
         const fetchMyQuizzes = async () => {
             try {
-                const response = await axios.get('http://localhost:3002/quiz', {
+                const response = await axios.get('${process.env.REACT_APP_BACKEND_URL}/quiz', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('authToken')}`,
                     },
@@ -31,7 +31,7 @@ const MyQuizzes = () => {
 
     const handleDeleteQuiz = async (quizId) => {
         try {
-            const response = await axios.delete(`http://localhost:3002/quiz/${quizId}`, {
+            const response = await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/quiz/${quizId}`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('authToken')}`,
                 },
@@ -46,7 +46,7 @@ const MyQuizzes = () => {
     const handlePublishQuiz = async (quizId) => {
         try {
             const response = await axios.patch(
-                'http://localhost:3002/quiz/publish',
+                '${process.env.REACT_APP_BACKEND_URL}/quiz/publish',
                 { quizId },
                 {
                     headers: {
