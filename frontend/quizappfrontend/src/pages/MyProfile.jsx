@@ -22,7 +22,7 @@ const MyProfile = () => {
           return;
         }
 
-        await axios.get('${process.env.REACT_APP_BACKEND_URL}/user', {
+        await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user`, {
           headers: {
             Authorization: `Bearer ${authToken}`,
           },
@@ -60,7 +60,7 @@ const MyProfile = () => {
       }
 
       await axios.put(
-        '${process.env.REACT_APP_BACKEND_URL}/user/changepassword',
+        `${process.env.REACT_APP_BACKEND_URL}/user/changepassword`,
         {
           currentPassword,
           newPassword,
@@ -92,7 +92,7 @@ const MyProfile = () => {
       }
 
       await axios.put(
-        '${process.env.REACT_APP_BACKEND_URL}/user',
+        `${process.env.REACT_APP_BACKEND_URL}/user`,
         { name: updatedName },
         {
           headers: {

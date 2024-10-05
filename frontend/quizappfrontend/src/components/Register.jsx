@@ -47,7 +47,7 @@ function Register() {
     }
 
     try {
-      const response = await axios.post('${process.env.REACT_APP_BACKEND_URL}/auth/', { name, email, password, confirmPassword });
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/auth/`, { name, email, password, confirmPassword });
       const { token } = response.data.data;
       if (token) {
         toast.success('Registration successful! Redirecting to OTP verification...');

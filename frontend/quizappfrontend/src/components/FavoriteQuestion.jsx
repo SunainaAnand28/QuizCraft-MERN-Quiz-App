@@ -21,7 +21,7 @@ const FavoriteQuestions = () => {
           return;
         }
 
-        const response = await axios.get('${process.env.REACT_APP_BACKEND_URL}/favquestion', {
+        const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/favquestion`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

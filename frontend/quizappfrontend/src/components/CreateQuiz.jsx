@@ -124,7 +124,7 @@ const CreateQuiz = () => {
       };
 
       const response = await axios.post(
-        '${process.env.REACT_APP_BACKEND_URL}/quiz',
+        `${process.env.REACT_APP_BACKEND_URL}/quiz`,
         requestBody,
         {
           headers: {

@@ -22,7 +22,7 @@ const Exam = ({ userId }) => {
           return;
         }
 
-        const response = await axios.get('${process.env.REACT_APP_BACKEND_URL}/quiz/allpublishedquiz/test', {
+        const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/quiz/allpublishedquiz/test`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

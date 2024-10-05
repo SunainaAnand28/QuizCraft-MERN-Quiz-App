@@ -11,7 +11,7 @@ function ForgetPassword() {
   const handleForgetPassword = (e) => {
     e.preventDefault();
 
-    axios.post('${process.env.REACT_APP_BACKEND_URL}/auth/forgotpassword', { email })
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/auth/forgotpassword`, { email })
       .then(response => {
         toast.success("If your email is registered, you'll receive a reset link shortly.");
         

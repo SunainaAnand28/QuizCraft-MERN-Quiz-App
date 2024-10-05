@@ -15,7 +15,7 @@ const MyQuizzes = () => {
     useEffect(() => {
         const fetchMyQuizzes = async () => {
             try {
-                const response = await axios.get('${process.env.REACT_APP_BACKEND_URL}/quiz', {
+                const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/quiz`, {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('authToken')}`,
                     },
@@ -46,7 +46,7 @@ const MyQuizzes = () => {
     const handlePublishQuiz = async (quizId) => {
         try {
             const response = await axios.patch(
-                '${process.env.REACT_APP_BACKEND_URL}/quiz/publish',
+                `${process.env.REACT_APP_BACKEND_URL}/quiz/publish`,
                 { quizId },
                 {
                     headers: {
