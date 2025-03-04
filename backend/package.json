@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This is rest api for a quiz app",
   "main": "dist/app.js",
-  "author": "Sayed Azhar Sabri",
+  "author": "Sunaina Anand",
   "license": "MIT",
   "dependencies": {
     "@types/bcryptjs": "^2.4.3",
